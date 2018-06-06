@@ -1,0 +1,144 @@
+<html>
+
+    <head>
+        <title>Ali Elsadai</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="C:\xampp\htdocs\protfolio\style.css">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/jquery-circle-progress/dist/circle-progress.min.js"></script>
+    </head>
+    <!-- head -->
+    
+    <body>
+        <div class="container">
+            <div class="col-left">
+                <div class="img">
+                    <img src="image.png">
+                </div>
+                <div class="name">
+                    <h2>ALI ELSADAI</h2>
+                </div>
+                <!-- name -->
+
+                <div class="info">
+                    <h3>INFO</h3>
+
+                    <div class="info-details">
+                        <div class="icon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <!-- icon -->
+                        <div class="details">
+                            <h5>E-MAIL</h5>
+                            <p>aliahmed962@hotmail.com</p>
+                        </div>
+                        <!-- details -->
+                    </div>
+                    <!-- info-details -->
+
+                    <div class="info-details">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <!-- icon -->
+                        <div class="details">
+                            <h5>ADDRESS</h5>
+                            <p>Zarka Zrenjanina 3/20, Pancevo</p>
+                        </div>
+                        <!-- details -->
+                    </div>
+                    <!-- info-details -->
+
+                    <div class="info-details">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <!-- icon -->
+                        <div class="details">
+                            <h5>PHONE</h5>
+                            <p>00381 61 206 70 70</p>
+                        </div>
+                        <!-- details -->
+                    </div>
+                    <!-- info-details -->
+
+                    <div class="info-details">
+                        <div class="icon">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <!-- icon -->
+                        <div class="details">
+                            <h5>DATE OF BIRTH</h5>
+                            <p>20/02/1996, Misurata, Libya</p>
+                        </div>
+                        <!-- details -->
+                    </div>
+                    <!-- info-details -->
+                </div>
+                <!-- info -->
+
+                <div class="languages">
+                    <h3>LANGUAGES</h3>
+                    <div class="language">
+                        <div id="circle"><strong></strong></div>
+                       <!-- <p>ARABIC <span>(native)</span></p>
+                        <progress value="100" max="100"></progress>-->
+                    </div>
+                    <!-- LANGUAGE -->
+                    
+                    <div class="language">
+                        <p>ENGLISH</p>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <!-- LANGUAGE -->
+                    
+                    <div class="language">
+                        <p>SERBIAN</p>
+                        <div id="cr"></div>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                    <!-- LANGUAGE -->
+                    <div class="language">
+                        <p>SPANISH</p>
+                        <progress value="30" max="100"></progress>
+                    </div>
+                    <!-- LANGUAGE -->
+                </div>
+                <!-- languages -->
+            </div>
+            <!-- col-left -->
+
+            <div class="col-right">
+
+            </div>
+            <!-- col-right -->
+        </div>
+        <!-- wrapper -->
+    </body>
+    <!-- body -->
+</html>
+<!-- html -->
+
+
+<script>
+    var c4 = $('#circle');
+
+    c4.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: 0.5,
+    size: 50,
+    thickness: 5,
+    lineCap: 'round',
+    fill: { gradient: ['black', 'RED']}
+    }).on('circle-animation-progress', function(event, progress) {
+    $(this).find('strong').html( '<i>Hi this is the text </i>');
+    });
+
+    // Let's emulate dynamic value update
+    setTimeout(function() { c4.circleProgress('value', 0.7); }, 1000);
+    setTimeout(function() { c4.circleProgress('value', 1.0); }, 1000);
+    setTimeout(function() { c4.circleProgress('value', 0.7); }, 2100);
+</script>

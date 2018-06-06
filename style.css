@@ -1,0 +1,75 @@
+body{
+  margin: auto;
+  padding: 0px;
+  width: 75%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "col-left    col-right";
+    justify-items: center;
+}
+
+.col-left{
+    display: grif;
+    grid-area: col-left;
+    justify-items: center;
+    padding: 10px;
+    border-right: solid gray 1px;
+}
+
+.info-details{
+  display: grid;
+  grid-template-columns:  40px   auto;
+  grid-template-rows:     auto  auto;
+  grid-template-areas:    "icon   details"
+                          "icon   details";
+  align-items: center;
+  margin-top: 10px;
+}
+
+.name{
+    border-bottom: solid gray 1px;
+}
+
+.img, .name, h3{
+    text-align: center;
+}
+
+.icon{
+    grid-area: icon;
+    padding: 5px;
+}
+
+.info .info-details .icon i{
+    font-size: 28px;
+}
+
+.details{
+    grid-area: details;
+}
+
+.details h5, p{
+    margin: 5px 0px 5px 0px;
+    text-align: left;
+}
+
+.details h5{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.details p{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.col-right{
+    grid-area: col-right;
+}
+
+.languages>progress{
+    text-align: left;
+} 
+

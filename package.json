@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery-circle-progress": "^1.2.2"
+  }
+}
